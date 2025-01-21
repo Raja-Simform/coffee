@@ -1,0 +1,434 @@
+ARC-Seal: i=3; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=EAPjQjLzUe8wimypxafdJSW9ElMAqeZIVw5e3w5HNyp9L9O6xE6ZjwtLc9OGkTgUqyX6q0So/D9PeNF4zhFcx7JwyT6uI0LYKFKJ1aDhsKv8XspUwccvvykNTNlR8kZhhweZ4svst8tSBzSi9FGZoIZ75O7ubzmWAXNcXUpq+fCdQI6B+AUAiSpD7FOzcyYyx4TJYuaRY3OG9PzT6149O+EGud+uWogfL9W+5hUPoAGS4z7FoPplgD4WmwBuzIUL8SEwN5LgdXFjO35cxCV/GhkgfT+L9NmsmgqD6/lLQAaO9zj/jcUQlmjss1YzTk0PvprqY4UpEJU5xMqaZTkVWw==
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=xlSAL1axjUzUBwJ/LtGuzWQAm1c271RjxLb+W+uWKy4=;
+ b=OLGcU612EsPsuln24nGcLVPwQbugobHv6uBh2GrTRfCMH/SFLHxkU/2UIZuabt3/viR4soPx4vOe8jrKXo9pg2HbmRAbwvSuu7MbkfmCazxorRIMSgTszYW4FFtW+oLgzDBLMSUF1SwUKo4V291qoTUAsAN9ht6HbdECkkimWeFtnJqpEobxUmBthhtDnYSNLm9qGnT1tE2rj4QkYO3NAQ5v3ofoe4XeBThkB3pL7GmgfKkqCvfIGO7QvvPJXO2s9p4EPGxQBRJaNQ1vFjSlg/ME3M1Jv9PKFcpAXm5gQWn5gckfQoDcIS21oeidZ01lqqEIQxOf3CS+m0mEG1q6HA==
+ARC-Authentication-Results: i=3; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c408::3) smtp.rcpttodomain=apac.teams.ms
+ smtp.mailfrom=simformsolutions.com; dmarc=pass (p=reject sp=reject pct=100)
+ action=none header.from=e.udemymail.com; dkim=pass (signature was verified)
+ header.d=simformsolutionspvtltd.onmicrosoft.com; dkim=pass (signature was
+ verified) header.d=e.udemymail.com; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=em5702.e.udemymail.com]
+ dkim=[1,1,header.d=e.udemymail.com] dmarc=[1,1,header.from=e.udemymail.com])
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=m0bQ2zU+t3KEwjrYkp4/cHUMZyl5b0D/NmERp54r7kzRK6iCIUAFnH/tcEjFfRiZaebB9xSwrICQdjORPSggjRaDN22fvQ0i2yFRRMs68/ZWBwnvmcSiYB2YhASBe3cnEamWU8cpgHjvTOxI/443SfxxLs8y6jVroS/eQpnhzWZcmE26fi7vAZsNRydTM3cIREWRqPy0lI/poUuzTIepc5EWBRi0H6aolJT9VItK8tCcN3bURY2Mx9nEkh3z4vfduwJBeFYnh+3KGJL+wMND18YJGEz8+AUfml5fZy2ItkVRBb2dawtoHmnoo/XHhITSeFKNrUznJDQNiuZqv/OCrA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=xlSAL1axjUzUBwJ/LtGuzWQAm1c271RjxLb+W+uWKy4=;
+ b=Kb1yGMy25uhpXwTno8Mswvm0CDYhKGbfwVnvnCIIfSfre0EUIgI53+GI35/QeThaGVLesiKDcairGUIznmw34dJlYipeZzSjLyRRnMoI7fhfQ3Qud/R9FW2j6x7mg+rLfaZSiRGPgY6QbcM2yGM410I1GNFYfmYlN7AscEWnWwJ40ZZDVNKW2+4DMQJo7eUdkY5UDghGf50xhlv+b8D5VAvNsqJ+L31ub8UEL9SGbQ3NxBZTAm4Z1mILglDaEoflVQsQ8iB/OGLVoN+f8gJs4jK8kk7/v+uH6xAd4dDdfUffNLkvqC88jyj151fUsG0TAtnEbkVi+z0qEIHdpsLo0w==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2a01:111:f403:c408::3) smtp.rcpttodomain=apac.teams.ms
+ smtp.mailfrom=simformsolutions.com; dmarc=pass (p=reject sp=reject pct=100)
+ action=none header.from=e.udemymail.com; dkim=pass (signature was verified)
+ header.d=simformsolutionspvtltd.onmicrosoft.com; dkim=pass (signature was
+ verified) header.d=e.udemymail.com; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=em5702.e.udemymail.com]
+ dkim=[1,1,header.d=e.udemymail.com] dmarc=[1,1,header.from=e.udemymail.com])
+Received: from SI2PR01CA0019.apcprd01.prod.exchangelabs.com
+ (2603:1096:4:192::12) by SI2PR02MB5683.apcprd02.prod.outlook.com
+ (2603:1096:4:1ae::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8314.16; Tue, 7 Jan
+ 2025 08:24:05 +0000
+Received: from SG1PEPF000082E3.apcprd02.prod.outlook.com
+ (2603:1096:4:192:cafe::70) by SI2PR01CA0019.outlook.office365.com
+ (2603:1096:4:192::12) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8314.18 via Frontend Transport; Tue,
+ 7 Jan 2025 08:24:11 +0000
+Authentication-Results: spf=pass (sender IP is 2a01:111:f403:c408::3)
+ smtp.mailfrom=simformsolutions.com; dkim=pass (signature was verified)
+ header.d=simformsolutionspvtltd.onmicrosoft.com;dmarc=pass action=none
+ header.from=e.udemymail.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of simformsolutions.com
+ designates 2a01:111:f403:c408::3 as permitted sender)
+ receiver=protection.outlook.com; client-ip=2a01:111:f403:c408::3;
+ helo=PNZPR01CU001.outbound.protection.outlook.com; pr=C
+Received: from PNZPR01CU001.outbound.protection.outlook.com
+ (2a01:111:f403:c408::3) by SG1PEPF000082E3.mail.protection.outlook.com
+ (2603:1096:f:fff5::6) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8335.7 via Frontend Transport; Tue, 7
+ Jan 2025 08:24:04 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=linHMRl2tSOIgVidu2Uvm/8eb7TfPGy2wvoaqWOinocg1GD4MX5dda3g0kOW4uFZyePWf5xQUvnI+zVdukfLSpDISLRXkvYfbFm/FgHjl8wcwRUdByuwKQMZ7Bmw5gdbgcSuWg5JsZObzUxihxhQ727/Gt1aVqvZYLiHwV5c+Oda3QfneDH3m8WeVq3Eyzs7FPOmjk0qilI+jgmSGf9KMOIaS/bBpUx4d0dZLokvvg9dF70FMviHEH16DczZ/XPtNNKJCir/uoSmVpBWZ/P4k8nxvayp7ia9+bcZvfzUj9cUJFTLirIaytacoOmm6/1CqwDR1Yj5NyvIOoWY8Ie/Zg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=xlSAL1axjUzUBwJ/LtGuzWQAm1c271RjxLb+W+uWKy4=;
+ b=lqfIdUfildRtd2aBrWxETMAjLhhSZ/Uv3N0TRPOaA3qdFUa5X79dz8kQyu47KGqONyaDLlHHlFiPftSjm+Y3bEDFwIL7qPLISBv9Ut+ma2qXXRwUJ9gDRVL+YrjqK7L9RQ78ZnFCmhPUuV3ye7n/YHZz6NVMDPHAAeCuy8E2zIW7cVjVtMHTj6D9j7/0iaWS7xwXIZfv1+AVycrpvtGsTxCJveHNoE2Ab+SqM6Ztei/mXTNjd6DQ1x8m2DsZZ/nFoKT5rtdeT9qKyddJdRo1gH84x45nZmxGL+pPrincJgp8Gr9znmF2cfshM/0H3fY4yoJblFd3ccEyzIW363m5Gw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 159.183.70.9) smtp.rcpttodomain=simformsolutions.com
+ smtp.mailfrom=em5702.e.udemymail.com; dmarc=pass (p=reject sp=reject pct=100)
+ action=none header.from=e.udemymail.com; dkim=pass (signature was verified)
+ header.d=e.udemymail.com; arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=simformsolutionspvtltd.onmicrosoft.com;
+ s=selector2-simformsolutionspvtltd-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=xlSAL1axjUzUBwJ/LtGuzWQAm1c271RjxLb+W+uWKy4=;
+ b=b+RoZmoKfyrSYOu5jRAWob36mS5rF4d/yvWpAHIh4WFWud06AkWYx/D50IHndluDLkkKHLb9w8hsBnAc7ma2tQ/lRZ4Z3MdjByTK6tndJkr9j0VX73LkUxYEZlGtV9MPH8kMtNekGhllZxttlcGQJDithhN7/j1ojZ3jAtwP1FM=
+Resent-From: <sim-udemytrainee3@simformsolutions.com>
+Received: from PN2PR01CA0201.INDPRD01.PROD.OUTLOOK.COM (2603:1096:c01:e9::13)
+ by PN3PR01MB9984.INDPRD01.PROD.OUTLOOK.COM (2603:1096:c01:16e::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8314.17; Tue, 7 Jan
+ 2025 08:24:02 +0000
+Received: from PN2PEPF0000018F.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:c01:e9:cafe::5b) by PN2PR01CA0201.outlook.office365.com
+ (2603:1096:c01:e9::13) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8314.18 via Frontend Transport; Tue,
+ 7 Jan 2025 08:24:02 +0000
+Authentication-Results-Original: spf=pass (sender IP is 159.183.70.9)
+ smtp.mailfrom=em5702.e.udemymail.com; dkim=pass (signature was verified)
+ header.d=e.udemymail.com;dmarc=pass action=none header.from=e.udemymail.com;
+Received-SPF: Pass (protection.outlook.com: domain of em5702.e.udemymail.com
+ designates 159.183.70.9 as permitted sender) receiver=protection.outlook.com;
+ client-ip=159.183.70.9; helo=wfbtqshw.outbound-mail.sendgrid.net; pr=C
+Received: from wfbtqshw.outbound-mail.sendgrid.net (159.183.70.9) by
+ PN2PEPF0000018F.mail.protection.outlook.com (10.167.242.22) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8335.7
+ via Frontend Transport; Tue, 7 Jan 2025 08:24:01 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=e.udemymail.com;
+	h=content-type:from:mime-version:subject:to:cc:content-type:from:
+	subject:to;
+	s=s1; bh=xlSAL1axjUzUBwJ/LtGuzWQAm1c271RjxLb+W+uWKy4=;
+	b=RPPZ/MWqxcFTYmBlcErvVw7iQYLvT079gn4bOiExlbcXsoQ56Hbdfb6SVTzyy/9Z74k6
+	N5HIcGCoZhpos8T+CYr3W/dr9z2wfRDmBZq57sxIYH6mbe0avtsav9hfJSPidolwagtfqO
+	pkKisNsE9arcVB9vVuTKnlXgfzXAmLboisukUbC84Nrkgthbiu1ckpxe7H+MLKrfmi/g0z
+	LUYDtTkITpfyA01m8jHSc6w2Pubu/PIiroWG6wfIQ+UbfmsUp/YnlwamP3USdtmxk6pitd
+	Kcl6XAj6pCDJ4skAtTRMSg/XVZyDuULyNR/7YFkPPMLsmSWlwTsyTZf5v6fSrHwA==
+Received: by recvd-7f9db5675c-khnm2 with SMTP id recvd-7f9db5675c-khnm2-1-677CE49E-18
+	2025-01-07 08:23:58.878253185 +0000 UTC m=+4618912.475251282
+Received: from NzM1NA (unknown)
+	by geopod-ismtpd-20 (SG) with HTTP
+	id 2Kl9GzSKTEe_Fx8sB9f2Bw
+	Tue, 07 Jan 2025 08:23:58.868 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=f93283a06d1284210bdd7633bebf593a9f63c3b787d0dc2f786074f826c1
+Date: Tue, 07 Jan 2025 08:23:58 +0000 (UTC)
+From: Udemy <no-reply@e.udemymail.com>
+Mime-Version: 1.0
+Message-ID: <2Kl9GzSKTEe_Fx8sB9f2Bw@geopod-ismtpd-20>
+Subject: Udemy Login: Here's the 6-digit verification code you requested
+mail_type: passwordless-one-time-password
+X-SG-EID:
+ =?us-ascii?Q?u001=2EdyVaB2M5Wq3+55qBtzLEZthHXhoWSiyzllvkdjoc+ch6CRuQ7mJsl6RY7?=
+ =?us-ascii?Q?D2u3Bou=2F+GKci=2FE5TnDr76vLra6pGuHFjqQinT3?=
+ =?us-ascii?Q?6d+E=2FPbEpjyZWg8ZLfWx2hDo1A62KH6E9GiYeaW?=
+ =?us-ascii?Q?1IpP8BB1w037xnuViKjC=2FReisCXfLJaOZ54Daow?=
+ =?us-ascii?Q?0hF9c1aAYZ75xhfVoK1AOL+Qr9GIM=2FjAnP3tMCV?=
+ =?us-ascii?Q?+tyiOpscpmWllfAMaEud44=3D?=
+X-SG-ID:
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpUxNnQ6Eb18VeV6O9MtWGHbctlzwyuavCNQc?=
+ =?us-ascii?Q?7FhrCxmf+B+ilAc96eUuw3v9XhT5T3KJFHEUeIg?=
+ =?us-ascii?Q?GlG7PoOeFYXdJVhrpxm9j+4ofRKVyh68dJyfaXa?=
+ =?us-ascii?Q?ZQgwtbqyk3dW0J9Xjqrq6l7yokJ3Bldr7Qlw=3D?=
+To: sim-udemytrainee3@simformsolutions.com
+X-Entity-ID: u001.+N7Yz+224NaK2LnOd84RFw==
+Return-Path: bounces+SRS=GdJOY=T7@simformsolutions.com
+X-EOPAttributedMessage: 1
+X-MS-TrafficTypeDiagnostic:
+ PN2PEPF0000018F:EE_|PN3PR01MB9984:EE_|SG1PEPF000082E3:EE_|SI2PR02MB5683:EE_
+X-MS-Office365-Filtering-Correlation-Id: 89a8a90a-8162-497b-e9cc-08dd2ef4a5e5
+X-LD-Processed: f4814d23-3835-4d87-a7dc-57a19c04684a,ExtFwd
+X-MS-Exchange-SenderADCheck: 0
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam-Untrusted:
+ BCL:0;ARA:13230040|61400799027|48200799018|29132699027|69100299015|376014|9140799003|4076899003|8096899003;
+X-Microsoft-Antispam-Message-Info-Original:
+ =?us-ascii?Q?H0Htu0cvWZxfe0qvweZfvoNO8Yr6u5jFPrY59HJ7+OLHUs1Msa6jFXbay6R3?=
+ =?us-ascii?Q?5KbKNkxx6e2i6kEwP+Ayjy5LTdFxhpGRz4aihsRHk3qbjX+4NpbG/XPHQ05V?=
+ =?us-ascii?Q?RPjPSPTTPYRqQoil7BO5bvn1YrecJgQ7qt+Sa1yvunaJtF4/1JXYkfYuN3iF?=
+ =?us-ascii?Q?2luyxYfGLZWE1/iKuuJ/aCBRpmeN/YRd4xodmgc95pagvyor7aBKE+Zy/dio?=
+ =?us-ascii?Q?fyjxCaCFrIkUJUxOSd+jnzxmIiruUxEX1XOTvDy4wKSjsytjJ3yE8B60s3ag?=
+ =?us-ascii?Q?YQsNpbtZoNslI1cr7FGcV6icJvY2BVGQv7E71hb3PZVb/zoeiDW77fEOEE4e?=
+ =?us-ascii?Q?SLKyoqh+hUsKyNUx7WTN/KqMp0PnEso3dTRJRYKQHdSoI1v5BLFEvQKYOoyk?=
+ =?us-ascii?Q?NiP0Lp2SOt6zE2njpgwP0DBV+hW93llKB097mCo+AyBwJryEHlkr98q8s4yc?=
+ =?us-ascii?Q?QW9RjaUHy1QaLSx5D6dFFe57k/AIIZv6b+0cOYB3sUNA1oAmvOI/dE7gUYQq?=
+ =?us-ascii?Q?yASDSagcZC2TP/VCOomVUpQFknYVjcYCcDrvYkgvQddQX+5v6mcl5Aqts5jF?=
+ =?us-ascii?Q?b20Qs/JuOunSZexEYD6BzylZZf+WnNVWsiXV/qaWPW5pzm2TAFswnh+CjzGz?=
+ =?us-ascii?Q?nyTZEsJ67HvJllFuwwQo70bLruhAPqTfX5qYnnNNVK+bqIR7O3pHXNxcMepx?=
+ =?us-ascii?Q?oUC1+kYAVn4RMlqA26ccO0ofqoz7TLFTJrIHcYKBpWjZTU4w6VakQUpUrhdD?=
+ =?us-ascii?Q?Jn7A9j08yaxDTfoB+qDZaKGxJ7KdKGEqXkw+SBYvvZzc7dNcPUWxUaJTqKlj?=
+ =?us-ascii?Q?w8K7ZKDo5almAEDszeIxnGo4pmHdA4c/o5yORxO3rccA+NksPzAoNjx7Lfdn?=
+ =?us-ascii?Q?thP64NgMHrc9TkcY7hx3nfXupMyRGjk122Gpvs8UZD9wckHnlAELjzKwvWQo?=
+ =?us-ascii?Q?/DF/GKnMSVi2AwAhrDKAnNsdACV1NtmlT/30V+RuYgzuxw1mUQNyWDeWa3TQ?=
+ =?us-ascii?Q?0yKf6Cn7PnJSe5kT61shNgVmBhzIBQ8ImDEAcrqWJoBKF7Zb0pcit68fqvD6?=
+ =?us-ascii?Q?Trn3rB8T9ZFcsScTs4LRjczHgnkiwI8FpL1nbYOGBgqiRntP0dO+/QDoHsLv?=
+ =?us-ascii?Q?nyUhx1KE14sOj8MVL+mJMVQ70x4Jr/DYigW+ZFXNCwDFByk/duqyPTDd+5eS?=
+ =?us-ascii?Q?ZiufcBpbZewuwi1xjEGGEefWJlUhNJtqZ9mp3LdQO/W0GzEldM0O1u8gpa7y?=
+ =?us-ascii?Q?3ATf1AvWGgSE6nXz8olQExR6skgIytPdaIWHtk+H6uCqSd1s/MLHC4hEPKM7?=
+ =?us-ascii?Q?Obpk2vmRzKAMbkZOwnIJjCwNz/ex0k/mtyXx33Cy/2kK2HuaVc/dXErG82Mb?=
+ =?us-ascii?Q?DGG1yW3lbVFwR3sHLHIsrtMXEqnqDkcb4YfUIooMT9eIrJA+Sshb1jq4o8hz?=
+ =?us-ascii?Q?3ywnulwnUQs=3D?=
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:159.183.70.9;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:wfbtqshw.outbound-mail.sendgrid.net;PTR:wfbtqshw.outbound-mail.sendgrid.net;CAT:NONE;SFS:(13230040)(61400799027)(48200799018)(29132699027)(69100299015)(376014)(9140799003)(4076899003)(8096899003);DIR:OUT;SFP:1102;
+X-ExternalRecipientOutboundConnectors: f4814d23-3835-4d87-a7dc-57a19c04684a
+X-MS-Exchange-ForwardingLoop:
+ sim-udemytrainee3@simformsolutions.com;f4814d23-3835-4d87-a7dc-57a19c04684a
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PN3PR01MB9984
+X-EOPTenantAttributedMessage: 091df787-f34a-43a6-9f3b-f64ca831cef8:0
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ SG1PEPF000082E3.apcprd02.prod.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersPromoted:
+ SG1PEPF000082E3.apcprd02.prod.outlook.com
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Forest-ArrivalHubServer: SI2PR02MB5683.apcprd02.prod.outlook.com
+X-MS-Exchange-Forest-MessageScope: 66958880-4f4d-4566-8443-db432fa2694a
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 5b426752-58e5-4855-77c7-08dd2ef4a492
+X-MS-Exchange-Forest-RulesExecuted: SI2PR02MB5683
+X-Microsoft-Antispam:
+ BCL:2;ARA:13230040|69100299015|29132699027|13102899012|13012899012|2092899012|12012899012|3092899012|5062899012|3072899012|35042699022|4076899003|8096899003;
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?v2OsOHZZ93vhKyMPWkw77P4gPhedqJzUoxdg1WwTGV/TcBRA12IUUt8Dz+Es?=
+ =?us-ascii?Q?ppzbWl9RLJwPBnaxRqkXgKLjQqS8G++wL9GkhUA2NQKo15aGVBkHxphIYQ5T?=
+ =?us-ascii?Q?/LpQd124xihZB4CbehzGpUbFQjSqg0j+KrrQjm14hWP9+gD6leGIeCeOBhr/?=
+ =?us-ascii?Q?Jl+ZMLkz864FPfCTVZAji8EtOLtqsEiB7HGo6AHmwbb/b7EksrgWdZ0qrpe1?=
+ =?us-ascii?Q?zfwQ8jmKGs/wJ6VncPlT7sEUDMh1fEWMjUSzS87W6JO6Aoc4PMpv4oxxkjc8?=
+ =?us-ascii?Q?AjPMjyABsQAlGN6+EMqnt+XGkYIrK5EyxuDi1LQck7g4j25fRuj1+HD316Yc?=
+ =?us-ascii?Q?ytZBxH3ZFzQLrEN4gn/vb58Svdpctdad/QRW188/NsB77DMM1TeUJxgA+m5a?=
+ =?us-ascii?Q?n/vxL+9VQzIJX2o77Flqb1dVjR2RfFb6IJMUcQJDnD1UAfwLIw/fFIppr896?=
+ =?us-ascii?Q?RmqxJknFSaoIQaEwFjpGrgnxeJxagAzB+RSbyDP3C3ZTrbX33VhtyZF/F8Ev?=
+ =?us-ascii?Q?xqXl/+Utdh5H2LLrK2TLhhxGK2i4/LFLJ0nXj3F6N0Fihj/t63ETQZI0oRHH?=
+ =?us-ascii?Q?8RPUyzoaS7SNikMmgOObQrjHVNp3d+unDhUBTu+bqwWF35YYluC3kqa/ecTh?=
+ =?us-ascii?Q?rk/FIHm8XjCloOITqTsCw9gSin9pyJtb6xROi7om05gTnN0dc72SguXk2AAU?=
+ =?us-ascii?Q?1U2XY2jaaljdsn7vGvFDXrczA6Cuj9iinbXd5Vvc8GmbJU0lG3k0Q+TN9Et6?=
+ =?us-ascii?Q?WCwh3MU6upgSJ+Ju3ppskzzCj+FoZxzTt+ijzXlphNhza3GQzpXEp7M2RY8v?=
+ =?us-ascii?Q?Pn5c4MososkPGaffcrhS/e+XRmUuDyiFLmDVBOMFsXkFuAlQfbQgU0azQ/xP?=
+ =?us-ascii?Q?wWcI1Q1d649ELnMiaZb0AdMUOtPUz10EpPKTa4IYFYGS04ww+lNd0QkWgckD?=
+ =?us-ascii?Q?AnL3KwPHQXgb5Ip+FvtFVt6P8s2IDnuw50diMSKqu2C4mODBT8UmSGYBnubL?=
+ =?us-ascii?Q?6F9D5a7k5tIEKMA++QacSRvy505G5qacIT6Om66FZtrznqs2wz9JJumtWXqO?=
+ =?us-ascii?Q?iSX90nWv2nC60gBcYJNKSSmN0/ON7//Xrd6OZXoMM2BYhrRdRFhKVsoXFSac?=
+ =?us-ascii?Q?LIHJd8sJLqEjQt80f8zNwa5Paf/kNgiBoAiRaBWpYVwyV/6H/1yfXhENIuJR?=
+ =?us-ascii?Q?TrYOuYqrUQcizxsePEdyIQYw/tIW10NLFG0p2uVt0+69xg2OC33giXj5Pw5c?=
+ =?us-ascii?Q?nAYCo/e2rzd7/iAGyct2nyABE2F2Ca1w7PtCxlh8smHjCZOA0381Vwoo6dIT?=
+ =?us-ascii?Q?ltL2A0c1Q8u/KFA6m6dage+ntmrvVHI98NbaJUTbWzGlSwkZUz56NWKh9Lo7?=
+ =?us-ascii?Q?mpOmanF8MB7nrv5xiYeXLmcTgmgVSamAQilzVjPdepMj+1ZE39nayVNaKEIN?=
+ =?us-ascii?Q?eiRSEJ3eCfWOvEmsxangrWtphk71PZjgYA2u6VvLcnmvbyx4T04kyjj3l3oD?=
+ =?us-ascii?Q?bD+fHHIvBpDmAJPjv3UP8ieFPj0b0S9f02sNkMx5C/o+y7YX0eb/Y4anSkPA?=
+ =?us-ascii?Q?RP9CTdxJlA1b9yoiLAtnvFLMb4d9Yfs7TWwxk6ElR912XN/ki+0+uTe2v+tq?=
+ =?us-ascii?Q?KZqPjw2U8g71562RzoEwoAukwHOBQLn/yUULXOU0XT08kvtXiE27C7MjgEAP?=
+ =?us-ascii?Q?WSA+6HH66gnqCHX4XEWulh9e9jfxZ80I2dWWt5ZM/pi28fJct8WUUyPijZUW?=
+ =?us-ascii?Q?sW8SChD220Bu2t6ALQLPsh8u4demkIdqfhPD9CZ1hDZccG2wsghQB7TLl/GB?=
+ =?us-ascii?Q?V8inxzpIutH3L7OMb61ZbrGOoHU7LprcMWsUFZq5RsnGjVlhOMsb1folQR2m?=
+ =?us-ascii?Q?W5yCKTeCY+efxEBudC9DbL8UvalmFHmNMOoYG8yENs1yJty5I23eAJUZwWRe?=
+ =?us-ascii?Q?fftCSH2RReYZfGtuqb8S8F8Yg6InFrYq7Rhv451A/jUH0Dr/F9odeA8qcWDA?=
+ =?us-ascii?Q?/5V5WQu1N5ifzuppXvti1p/ZT0X9jpcgEvNftxKPL1j/b7T2O6ykIifB7TdJ?=
+ =?us-ascii?Q?V/Vgwpv/D04kvj50wRqNObJDXiJBHkESNe99OV5QIHHliGBSjOc=3D?=
+X-Forefront-Antispam-Report:
+ CIP:2a01:111:f403:c408::3;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PNZPR01CU001.outbound.protection.outlook.com;PTR:mail-centralindiaazlp170110003.outbound.protection.outlook.com;CAT:NONE;SFS:(13230040)(69100299015)(29132699027)(13102899012)(13012899012)(2092899012)(12012899012)(3092899012)(5062899012)(3072899012)(35042699022)(4076899003)(8096899003);DIR:INB;
+X-MS-Exchange-Forest-Language: en
+X-MS-Exchange-Forest-IndexAgent-0:
+ AQ0CZW4AAS8BAAAPAAADH4sIAAAAAAAACixPy26DMBBcIOZVIfUT9t
+ YLQkQ0aXOqqkRR7rQfQGDVWAK7tU1bfr2nLiHWaLSe2dm1/7wsfe9o
+ mBI+WXqSWMsBr4ozjVREVc4dltBdCFvdEZ6p1z/oNPb6A6Waq0mPZg
+ lh07Z6VK7I0s22rJ53Wfp2kXZJ0u+nNGTn0HqDg1SjI8udB9mpB4eG
+ vkayjjfdAi+418o1rcPRFvy6A/Xymwx1eJ5u67ZliafGGGm1wtoZIp
+ djZTo89lqbHOtG4dE0qpW21TnuX3H3uC6fivmz4Au48yEIYJXBPTNj
+ BUJAuIjMjEWJvDQECCHmKyOC2PfYBW6IgK2IlasVzhaECaRsCS8MAH
+ hUDAlnuRAQMSe81wsEgPgHAAD//wMAu5mUYYABAAA=
+X-MS-Exchange-Forest-IndexAgent: 1 314
+X-MS-Exchange-Forest-EmailMessageHash: 0EE1A2AD
+X-OriginatorOrg: apac.teams.ms
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Jan 2025 08:24:04.5278
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 89a8a90a-8162-497b-e9cc-08dd2ef4a5e5
+X-MS-Exchange-CrossTenant-Id: 091df787-f34a-43a6-9f3b-f64ca831cef8
+X-MS-Exchange-CrossTenant-AuthSource:
+ SG1PEPF000082E3.apcprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SI2PR02MB5683
+
+--f93283a06d1284210bdd7633bebf593a9f63c3b787d0dc2f786074f826c1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0
+
+Hi Sim Udemytrainee3,
+
+Use the code below to log in to your Udemy account.
+
+560389This code expires in 15 minutes.Didn't request this code? Contact us.
+
+-----------------------------
+Delivered by Udemy 600 Harrison Street, 3rd Floor, San Francisco, CA 94107.
+--f93283a06d1284210bdd7633bebf593a9f63c3b787d0dc2f786074f826c1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv=3D"Content-type" content=3D"text/html; charset=3Du=
+tf-8">
+        <meta name=3D"x-apple-disable-message-reformatting">
+
+        <title>Udemy</title>
+       =20
+       =20
+        <style>
+            #udemy-email img {
+                max-width:100%;
+                height:auto;
+            }
+
+            #udemy-email p {
+                color:#1C1D1F;
+                margin:0 0 8px 0;
+            }
+
+           =20
+            #udemy-email a {
+                color:#5624D0;
+                text-decoration:underline;
+            }
+
+            #udemy-email ul,
+            #udemy-email ol {
+                margin:0 0 8px 24px;
+                padding:0;
+            }
+
+            #udemy-email li {
+                margin:0 0 4px 0;
+                padding:0 0 0 8px;
+            }
+
+            #udemy-email hr {
+                border:0;
+                border-top:1px solid #CCCCCC;
+                margin:16px 0 16px 0;
+            }
+
+           =20
+        </style>
+    </head>
+    <body style=3D"color:#1C1D1F; margin:0; font-family:'SF Pro Text', -app=
+le-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-s=
+erif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size:1=
+6px; font-weight:400; line-height:1.4">
+        <table id=3D"udemy-email" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" style=3D"background-color:#F7F9FA; padding:24px">
+            <tr>
+                <td>&nbsp;</td>
+                <td width=3D"600">
+                    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"background-color:#FFF">
+                       =20
+                            <tr>
+                                <td style=3D"border-bottom:1px solid #CCCCC=
+C; padding:24px">
+                                   =20
+                                        <img style=3D"display:block; max-he=
+ight:28px; width:auto" src=3D"https://s.udemycdn.com/email/logo-udemy-v3.pn=
+g" alt=3D"Udemy"
+                                             width=3D"75" />
+                                   =20
+                                </td>
+                            </tr>
+                       =20
+                       =20
+                            <tr>
+                                <td style=3D"padding:24px 24px 0 24px">
+                                   =20
+                                   =20
+                                        <p><a href=3D"" style=3D"text-decor=
+ation:none; color:#1C1D1F">
+                                           =20
+                                               =20
+                                                    Hi Sim Udemytrainee3,
+                                               =20
+                                           =20
+                                        </a></p>
+                                   =20
+                                   =20
+                                       =20
+                                            <p >
+                                                <a href=3D"" style=3D"text-=
+decoration:none; color:#1C1D1F"><p><a href=3D"" style=3D"text-decoration:no=
+ne; color:#1C1D1F">Use the code below to log in to your Udemy account.</a><=
+/p></a>
+                                            </p>
+                                       =20
+                                            <p style=3D"margin-bottom:0">
+                                                <a href=3D"" style=3D"text-=
+decoration:none; color:#1C1D1F"><h1 style=3D"background-color: #d3d3d352;te=
+xt-align: center;"><a href=3D"" style=3D"text-decoration:none; color:#1C1D1=
+F">560389</a></h1></a><a href=3D"" style=3D"text-decoration:none; color:#1C=
+1D1F"><p><a href=3D"" style=3D"text-decoration:none; color:#1C1D1F">This co=
+de expires in 15 minutes.</a></p></a><a href=3D"" style=3D"text-decoration:=
+none; color:#1C1D1F"><p><a href=3D"" style=3D"text-decoration:none; color:#=
+1C1D1F">Didn't request this code? </a><a href=3D"https://e2.udemymail.com/l=
+s/click?upn=3Du001.9GWSZeWdmdf6rKBC5BsLZ2XRgp4nWQUKH3JsjxFFsFm-2BZGzCMtARE-=
+2FiYcAPFg7oXZ6knLVqxGn9xh09PzOooqPX87xrQUCW8lESlsMOh6GqcsVCYWSCMVe-2BOLxzTG=
+aiRR4yH_dnX8KPXpfCulh6QdlKFomvEfGBMqifQ9gLHCIq7k4hg6IEkuRvu7Gq4cCDCydoekge3=
+XM2p0o-2FCTT98MsdgZxW5sl1Sas7f-2BQwZBjePdufrFpglFiAjF5mJ-2BghQQQoz-2B9MVqeh=
+zxcNc4mPkMbP3-2FEwZXpoDzdoRzTN-2BlctFCEICCS1nHtocbgqBVxloYK8vtyzN3W-2BuOl1e=
+-2FcXyp8yEY9qU4diohHjI7j420tDP5AVIpG8Uby1pNsDcCi1541J99XqMkZq4wxHWd6-2FmNp8=
+7ppoS92peZjDd0vZqb41vvIgYAMtbf1-2FeBXFg8voUJuJFM037B-2BvAmtguOBCK3ke73qItGX=
+dMa-2Fr2k-2F5oQmSvlKEmMwT-2BeB9hwzChz0aYzlOWd">Contact us</a><a href=3D"" s=
+tyle=3D"text-decoration:none; color:#1C1D1F">.</a></p></a>
+                                            </p>
+                                       =20
+                                   =20
+                                </td>
+                            </tr>
+                       =20
+
+                       =20
+
+                       =20
+                           =20
+                       =20
+
+                       =20
+
+                        <tr>
+                            <td style=3D"padding:48px 24px 0 24px">
+                               =20
+                               =20
+                                <p style=3D"font-family:'SF Pro Text', -app=
+le-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-s=
+erif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size:1=
+2px; font-weight:400; line-height:1.4; color:#6A6F73; margin:0">
+                                   =20
+                                        Delivered by Udemy 600 Harrison Str=
+eet, 3rd Floor, San Francisco, CA 94107.
+                                   =20
+                                   =20
+                                       =20
+                                   =20
+                                   =20
+                                       =20
+                                   =20
+                                </p>
+                            </td>
+                        </tr>
+                       =20
+                        <tr>
+                            <td style=3D"padding:24px 0 0 0"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    <img src=3D"https://e2.udemymail.com/wf/open?upn=3Du001.v4C0EMaMnLNX3K6=
+GbLu9mkZxwL9vkTVmXrheWqWbj60C4fGazGcxnLZ-2FJMsWTZxETuLGDBKDdAlYcILkhvUUlGVP=
+-2FexIMqgf2Rog4Jiht5ml24dkc0pJun-2B6v5jswFtAqjvnp3oclZ0k26FvFkqekmut-2FaFzk=
+6T8KY0fIZfnpXgr53UOVvpbMdZfKBn-2FWZCW5qhp-2Fm2jlRV1CNQFsRiWmvefFQldq-2BgHDP=
+WBoeZG4DCpRtjM15Kwp-2BTWAWn608j3XOO0O-2Fvj6y34JzHiiynMnXi-2BKa5HPDzykdWS2bA=
+rpuxw7UHpFVh6x3oFpBzvuIl-2FFIw9-2BadcGMFJAAxSB9pyLDjWRkX-2BOVmvzKnV4WwRtdM2=
+-2Fhv7hhM-2FmzhWS7ogbzXdh4QIxeSRHWKH7eAQ0Zrx2A-3D-3D" alt=3D"" width=3D"1" =
+height=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !importa=
+nt;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !impor=
+tant;margin-right:0 !important;margin-left:0 !important;padding-top:0 !impo=
+rtant;padding-bottom:0 !important;padding-right:0 !important;padding-left:0=
+ !important;"/></body>
+</html>
+--f93283a06d1284210bdd7633bebf593a9f63c3b787d0dc2f786074f826c1--
