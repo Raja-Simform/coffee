@@ -1,4 +1,5 @@
-# coffee_sale_Landing_Page
+# ** Coffee- Sale Landing Page **
+![landing page view](https://github.com/user-attachments/assets/4a6cd32e-9341-404d-a212-5c98ef763567)
 
 ## Description
 An ecomerce platform for coffee related Products.
