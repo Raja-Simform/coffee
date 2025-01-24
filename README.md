@@ -1,6 +1,7 @@
 # Coffee- Shop Landing Page 
-![landing page view](![image](https://github.com/user-attachments/assets/a0bb992c-19dd-4938-827b-0f7da27a4740)
-)
+![landing page view](![![image](https://github.com/user-attachments/assets/d48cdb5a-4c7d-410c-90ba-ac9ad31cf5d0)
+])
+
 
 ## Description
 An ecomerce platform for coffee related Products.
