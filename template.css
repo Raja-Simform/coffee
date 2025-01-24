@@ -24,7 +24,7 @@
     padding-top: 1.6rem;
   }
   .left_nav:hover{
-    transform: scale(1.1);
+    
   }
   .left_nav h1{
     padding-top: 1rem;
@@ -43,10 +43,10 @@
     cursor: pointer;
     
   }
-  .right_nav ul li:hover{
+  /* .right_nav ul li:hover{
     transform: scale(1.1);
   }
-  
+   */
   
   .content{
     display: flex;
@@ -96,7 +96,7 @@
     width: 7rem;
     border: none;
     border-radius: 1.4rem;
-    
+    cursor: pointer;
     
   }
  
@@ -108,12 +108,13 @@
     height: 2.6rem;
     width: 7rem;
     border-radius: 1.4rem;
+    cursor: pointer;
     
    
   }
-  #order_now:hover ,#contact_us:hover {
+  /* #order_now:hover ,#contact_us:hover {
     transform: scale(1.1);
   }
   .right1 {
     width: 50%;
-  }
+  } */
