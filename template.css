@@ -2,93 +2,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container{
+  }
+  .container{
     background-color: rgb(53, 19, 19);
-    height: 968px;
+    height: 100vh;
     
-}
-.header{
+  }
+  .header{
     display: flex;
     justify-content: space-between;
-}
-#list{
+  }
+  #list{
     list-style-type: none;
-}
-.img1{
+  }
+  .img1{
    
     
-}
-.left_nav{
+  }
+  .left_nav{
     display: flex;
-    padding-left: 60px;
-    gap: 20px;
-    padding-top: 20px;
-}
-.left_nav h1{
-    padding-top: 15px;
+    padding-left: 4rem;
+    gap: 1.4rem;
+    padding-top: 1.5rem;
+  }
+  .left_nav h1{
+    padding-top: 1rem;
     color: aliceblue;
-}
-.right_nav ul{
+  }
+  .right_nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
-    padding: 40px;
+    gap: 1rem;
+    padding: 3.5rem;
     color: aliceblue;
     font-weight: 500;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
-}
-.content{
+  }
+  .content{
     display: flex;
     
     align-items: center;
     color: aliceblue;
     
     
-}
-.left1{
+  }
+  .left1{
    display: flex;
    flex-direction: column;
    align-content: center;
-   padding: 70px;
-   gap: 50px;  
+   padding: 4.4rem;
+   gap: 3.3rem;  
    width: 50%; 
    
-}
-.left1 h1{
+  }
+  .left1 h1{
     font-style: italic;
     color:rgb(226, 150, 9);
     font-family:'Times New Roman', Times, serif;
-
-}
-.left1 h3{
-     font-size: 40px;  
-}
-.left1 p{
+  
+  }
+  .left1 h3{
+     font-size: 2.6rem;  
+  }
+  .left1 p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.buttons{
+  }
+  .buttons{
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     justify-content: space space-around;
     
     
-}
-#order_now{
+  }
+  #order_now{
     background-color: rgb(226, 150, 9);
-    height: 40px;
-    width: 120px;
+    height: 2.6rem;
+    width: 7rem;
     border: none;
-    border-radius: 22px;
+    border-radius: 1.4rem;
     
     
-}
-#contact_us{
-    height: 40px;
-    width: 120px;
+  }
+  #contact_us{
+    
     color: aliceblue;
-    border-radius: 22px;
+    
     background-color: transparent;
-}
+    height: 2.6rem;
+    width: 7rem;
+    border-radius: 1.4rem;
+    
+   
+  }
