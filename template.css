@@ -50,7 +50,6 @@
   
   .content{
     display: flex;
-    
     align-items: center;
     color: aliceblue;
     
@@ -61,12 +60,14 @@
    flex-direction: column;
    align-content: center;
    padding: 4.4rem;
-   gap: 3.3rem;  
+   gap: 3.2rem;  
    width: 50%; 
+   
+   
    
   }
   .left1 h1{
-    
+    font-size: 3rem;
     color:rgb(226, 150, 9);
     font-family: 'poppins';
   
@@ -76,16 +77,19 @@
      font-family: 'poppins';
   }
   .left1 p{
+     font-size: 1rem;
     font-family: 'poppins';
   }
+
   .buttons{
     display: flex;
-    gap: 2rem;
+    gap: 2.2rem;
     justify-content: space space-around;
   }
   /* .left1 h3:hover,.left1 p:hover{
     transform: scale(1.1);
   } */
+
   #order_now{
     background-color: rgb(226, 150, 9);
     height: 2.6rem;
@@ -110,4 +114,6 @@
   #order_now:hover ,#contact_us:hover {
     transform: scale(1.1);
   }
-   
+  .right1 {
+    width: 50%;
+  }
