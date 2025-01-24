@@ -1,5 +1,6 @@
 # Coffee- Shop Landing Page 
-![landing page view](![![image](https://github.com/user-attachments/assets/d48cdb5a-4c7d-410c-90ba-ac9ad31cf5d0)
+![landing page view](![![image](![Screenshot 2025-01-24 at 14-06-00 Buy Coffee](https://github.com/user-attachments/assets/1bc28628-a9e6-460f-8da8-44a67c0756a7)
+
 ])
 
 
